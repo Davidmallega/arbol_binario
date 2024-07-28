@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='result_styles.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='background2.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="inner-container">
+    <h2>Resultado de la Ruta</h2>
+    {% if recommended_route %}
+        <h3>Ruta recomendada: {{ recommended_route }}</h3>
+        <ul>
+            {% for route in all_routes %}
+                <li class="{% if route.route == recommended_route %}recommended{% else %}normal{% endif %}">
+                    <strong>{{ route.route }}</strong> - 
+                    Tiempo: {{ route.tiempo if 'tiempo' in route else 'N/A' }} horas, 
+                    Distancia: {{ route.distancia if 'distancia' in route else 'N/A' }} km, 
+                    costo: ${{ "{:,.0f}".format(route.costo) if 'costo' in route else 'N/A' }}
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No se encontró una ruta válida.</p>
+    {% endif %}
+    <a href="{{ url_for('main.index') }}">Volver</a>
+</div>
+{% endblock %}

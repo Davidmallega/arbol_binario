@@ -1,0 +1,20 @@
+arboles binarios/
+├── app/
+│   ├── __init__.py
+│   ├── models.py
+│   ├── routes.py
+│   ├── controllers.py
+│   ├── static/
+│   │   ├── images/
+│   │   │   └── background1.jpg
+│   │   │   └── background2.jpg
+│   │   │   └── logo.png          
+│   │   ├── background.css
+│   │   ├── background2.css
+│   │   ├── index_styles.css
+│   │   ├── result_styles.css
+│   ├── templates/
+│   │   ├── base.html
+│   │   ├── index.html
+│   │   ├── result.html
+├── run.py

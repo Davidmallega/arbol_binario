@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='index_styles.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='background.css') }}">
+{% endblock %}
+
+{% block content %}
+<h1 class="title"></h1>
+<form method="POST" action="{{ url_for('main.index') }}">
+    <div class="form-group">
+        <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo de la Empresa" class="logo">
+        <br>
+        <br>
+        <label for="origin">Origen</label>
+        <div>
+            <input type="text" id="origin" name="origin" value="Santiago" readonly>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="destination">Destino</label>
+        <div>
+            <select id="destination" name="destination">
+                <option value="Valparaíso">Valparaíso</option>
+                <option value="Antofagasta">Antofagasta</option>
+                <option value="Iquique">Iquique</option>
+            </select>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="weight">Peso de la ruta (distancia, tiempo, costo)</label>
+        <div>
+            <select id="weight" name="weight">
+                <option value="distancia">Distancia</option>
+                <option value="tiempo">Tiempo</option>
+                <option value="costo">costo</option>
+            </select>
+        </div>
+    </div>
+    <div class="form-group">
+        <button type="submit">Calcular</button>
+    </div>
+</form>
+{% endblock %}

@@ -1,0 +1,55 @@
+/* Contenedor principal centrado */
+.container {
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo semi-transparente */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.409);
+    max-width: 600px;
+    width: 100%;
+    margin-top: 20px; /* Separación del encabezado */
+    text-align: center;
+}
+/* Título principal */
+h2 {
+    font-size: 24px;
+    color: #d81b60;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilo para las listas */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+li.recommended {
+    background-color: #f8bbd0dd; /* Color de fondo para la ruta recomendada */
+}
+
+li.normal {
+    background-color: #e0e0e0; /* Color de fondo para las rutas normales */
+}
+
+/* Estilo para el botón de volver */
+a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #d81b60;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 4px;
+    text-align: center;
+}
+
+/* Efecto hover para el botón */
+a:hover {
+    background-color: #880e4f;
+}

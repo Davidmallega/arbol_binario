@@ -1,0 +1,71 @@
+/* Contenedor principal centrado */
+.container {
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo semi-transparente */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    max-width: 400px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: auto;
+    
+}
+
+/* Título principal */
+h1.title {
+    font-size: 24px;
+    color: #00796b;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilo para los grupos de formulario */
+.form-group {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Estilo para las etiquetas */
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    text-align: left;
+}
+
+/* Estilo para los campos de entrada de texto y los selectores */
+input[type="text"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #b2dfdb;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Estilo para el botón */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #004d40;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Efecto hover para el botón */
+button:hover {
+    background-color: #00251a;
+}
+
+.logo { 
+    width: 70%;
+    height: 80px;
+    background-image: url('logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
